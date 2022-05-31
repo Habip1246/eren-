@@ -1,5 +1,5 @@
-import asyncio
-import json
+ asyncio'yu içe aktar
+ json'u içe aktar
 import os
 import time
 
@@ -42,8 +42,8 @@ async def download_video(v_url):
     url = v_url.pattern_match.group(1)
     if not url:
         return await rkp.edit("`Error \nusage song <song name>`")
-    search = SearchVideos(url, offset=1, mode="json", max_results=1)
-    test = search.result()
+    search  =  SearchVideos ( url , offset = 1 , mode = "json" , max_results = 1 )
+    deneme  =  arama . sonuç ()
     p = json.loads(test)
     q = p.get("search_result")
     try:
